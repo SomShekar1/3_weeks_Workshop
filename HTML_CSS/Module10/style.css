@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f4f4f4;
+
+    padding:30px;
+}
+
+.form-container{
+
+    width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.form-container h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#333;
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+label{
+
+    margin-top:12px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+    color:#444;
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    outline:none;
+
+    font-size:14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#4CAF50;
+}
+
+.radio-group,
+.checkbox-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:5px;
+
+    flex-wrap:wrap;
+}
+
+.radio-group label,
+.checkbox-group label{
+
+    font-weight:normal;
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    background:#388E3C;
+}

@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#f5f6fa;
+}
+
+/* Hero Section */
+
+.hero{
+
+    min-height:100vh;
+
+    padding:30px 80px;
+}
+
+/* Navbar */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#3b82f6;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+nav ul a{
+
+    text-decoration:none;
+
+    color:#444;
+}
+
+.nav-btn{
+
+    background:#3b82f6;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:80px;
+
+    gap:50px;
+}
+
+/* Left Side */
+
+.left{
+
+    flex:1;
+}
+
+.left h1{
+
+    font-size:60px;
+
+    color:#222;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+}
+
+.left p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.btn-primary{
+
+    background:#3b82f6;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+.btn-secondary{
+
+    background:white;
+
+    color:#3b82f6;
+
+    border:2px solid #3b82f6;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+/* Right Side */
+
+.right{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.right img{
+
+    width:500px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Floating Cards */
+
+.floating-card{
+
+    position:absolute;
+
+    background:white;
+
+    padding:15px 20px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    text-align:center;
+}
+
+.card1{
+
+    top:40px;
+    left:20px;
+}
+
+.card2{
+
+    bottom:40px;
+    right:20px;
+}
+
+.floating-card h3{
+
+    color:#3b82f6;
+
+    margin-bottom:5px;
+}
+
+/* Hover Effects */
+
+.btn-primary:hover{
+
+    background:#2563eb;
+}
+
+.btn-secondary:hover{
+
+    background:#3b82f6;
+    color:white;
+}
+
+.floating-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:0.3s;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .hero-content{
+
+        flex-direction:column;
+    }
+
+    .left{
+
+        text-align:center;
+    }
+
+    .left h1{
+
+        font-size:40px;
+    }
+
+    nav{
+
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .right img{
+
+        width:100%;
+    }
+}

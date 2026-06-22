@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#dfe6f2;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* Background Circles */
+
+body::before{
+
+    content:"";
+
+    width:250px;
+    height:250px;
+
+    background:rgba(255,255,255,0.5);
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:50px;
+    left:100px;
+
+    filter:blur(10px);
+}
+
+body::after{
+
+    content:"";
+
+    width:220px;
+    height:220px;
+
+    background:rgba(255,255,255,0.5);
+
+    border-radius:50%;
+
+    position:absolute;
+
+    bottom:50px;
+    right:120px;
+
+    filter:blur(10px);
+}
+
+/* Glass Card */
+
+.login-card{
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.3);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.1);
+
+    z-index:10;
+}
+
+.login-card h1{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#4b4b4b;
+
+    letter-spacing:2px;
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
+
+    background:rgba(255,255,255,0.4);
+
+    outline:none;
+}
+
+.password-box{
+
+    position:relative;
+}
+
+.password-box i{
+
+    position:absolute;
+
+    right:15px;
+    top:12px;
+
+    color:#666;
+}
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+}
+
+.options a{
+
+    text-decoration:none;
+
+    color:#555;
+}
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:white;
+
+    color:#444;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    background:#f1f1f1;
+}

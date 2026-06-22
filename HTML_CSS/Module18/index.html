@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animations</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* =====================================
+   1. Animated Button
+===================================== */
+
+.animated-btn{
+
+    padding:15px 30px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+.animated-btn:hover{
+
+    transform:scale(1.1);
+
+    background:#1d4ed8;
+}
+
+/* =====================================
+   2. Loading Spinner
+===================================== */
+
+.spinner{
+
+    width:80px;
+    height:80px;
+
+    margin:auto;
+
+    border:8px solid #ddd;
+
+    border-top:8px solid #2563eb;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* =====================================
+   3. Rotating Card
+===================================== */
+
+.rotating-card{
+
+    width:200px;
+    height:120px;
+
+    background:#7c3aed;
+
+    color:white;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:10px;
+
+    animation:rotateCard 4s linear infinite;
+}
+
+@keyframes rotateCard{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* =====================================
+   4. Bouncing Ball
+===================================== */
+
+.ball{
+
+    width:70px;
+    height:70px;
+
+    background:red;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    animation:bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-150px);
+    }
+}
+
+/* =====================================
+   5. Image Hover Zoom
+===================================== */
+
+.image-box{
+
+    width:250px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    border-radius:10px;
+}
+
+.image-box img{
+
+    width:100%;
+
+    transition:0.5s;
+}
+
+.image-box:hover img{
+
+    transform:scale(1.2);
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Module 18 - CSS Animations</h1>
+
+<div class="container">
+
+    <!-- Animated Button -->
+
+    <div class="box">
+
+        <h2>Animated Button</h2>
+        <br>
+
+        <button class="animated-btn">
+            Hover Me
+        </button>
+
+    </div>
+
+    <!-- Loading Spinner -->
+
+    <div class="box">
+
+        <h2>Loading Spinner</h2>
+        <br>
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Rotating Card -->
+
+    <div class="box">
+
+        <h2>Rotating Card</h2>
+        <br>
+
+        <div class="rotating-card">
+            Rotating Card
+        </div>
+
+    </div>
+
+    <!-- Bouncing Ball -->
+
+    <div class="box">
+
+        <h2>Bouncing Ball</h2>
+        <br><br>
+
+        <div class="ball"></div>
+
+    </div>
+
+    <!-- Image Hover Zoom -->
+
+    <div class="box">
+
+        <h2>Image Hover Zoom</h2>
+        <br>
+
+        <div class="image-box">
+
+            <img src="https://picsum.photos/400/300" alt="Image">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

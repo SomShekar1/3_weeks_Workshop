@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#1e293b;
+
+    padding:15px 50px;
+}
+
+.logo{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:20px;
+}
+
+nav ul a{
+
+    text-decoration:none;
+
+    color:white;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:50px;
+}
+
+.hero-text{
+
+    flex:1;
+}
+
+.hero-text h1{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+}
+
+.hero-text p{
+
+    margin-bottom:20px;
+
+    color:#555;
+}
+
+.hero-text button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:5px;
+}
+
+.hero-image{
+
+    flex:1;
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:10px;
+}
+
+/* ==========================
+   PRODUCT CARDS
+========================== */
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+
+    padding:40px;
+}
+
+.card{
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:10px;
+
+    padding:40px;
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:8px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+/* ==========================
+   TABLET VIEW
+========================== */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .hero{
+
+        flex-direction:column;
+    }
+
+    .hero-text{
+
+        text-align:center;
+    }
+
+    .products{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .gallery{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+/* ==========================
+   MOBILE VIEW
+========================== */
+
+@media(max-width:480px){
+
+    nav ul{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero{
+
+        padding:20px;
+    }
+
+    .hero-text h1{
+
+        font-size:32px;
+    }
+
+    .products{
+
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+    }
+
+    nav{
+
+        padding:20px;
+    }
+}

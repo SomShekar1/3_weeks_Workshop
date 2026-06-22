@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#f4f4f4;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.pricing-section{
+
+    width:100%;
+
+    text-align:center;
+}
+
+.pricing-section h1{
+
+    margin-bottom:40px;
+
+    color:#333;
+}
+
+.pricing-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.pricing-card{
+
+    width:300px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+}
+
+.pricing-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,0.25);
+}
+
+.pricing-card h2{
+
+    color:#333;
+
+    margin-bottom:20px;
+}
+
+.price{
+
+    font-size:36px;
+
+    font-weight:bold;
+
+    color:#4f46e5;
+
+    margin-bottom:25px;
+}
+
+.price span{
+
+    font-size:14px;
+
+    color:#777;
+}
+
+.pricing-card ul{
+
+    list-style:none;
+
+    text-align:left;
+
+    margin-bottom:25px;
+}
+
+.pricing-card ul li{
+
+    margin:12px 0;
+
+    color:#555;
+}
+
+.pricing-card ul li i{
+
+    color:#22c55e;
+
+    margin-right:8px;
+}
+
+.pricing-card button{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:#4f46e5;
+
+    color:white;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.pricing-card button:hover{
+
+    background:#3730a3;
+}
+
+/* Featured Plan */
+
+.featured{
+
+    background:#4f46e5;
+
+    color:white;
+
+    transform:scale(1.05);
+}
+
+.featured h2,
+.featured .price,
+.featured .price span,
+.featured ul li{
+
+    color:white;
+}
+
+.featured ul li i{
+
+    color:#90ee90;
+}
+
+.featured button{
+
+    background:white;
+
+    color:#4f46e5;
+
+    font-weight:bold;
+}

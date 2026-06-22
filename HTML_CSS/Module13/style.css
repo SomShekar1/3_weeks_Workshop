@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+
+    background:#f4f4f4;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.team-section{
+
+    width:100%;
+
+    padding:50px 20px;
+
+    text-align:center;
+}
+
+.team-section h1{
+
+    margin-bottom:40px;
+
+    color:#333;
+}
+
+/* Flexbox Container */
+
+.team-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+/* Team Card */
+
+.team-card{
+
+    width:250px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s ease;
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+}
+
+/* Profile Image */
+
+.team-card img{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+}
+
+/* Name */
+
+.team-card h3{
+
+    color:#333;
+
+    margin-bottom:8px;
+}
+
+/* Designation */
+
+.team-card p{
+
+    color:#777;
+
+    margin-bottom:15px;
+}
+
+/* Social Icons */
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+}
+
+.social-icons a{
+
+    color:#555;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+
+    color:#0077b5;
+}

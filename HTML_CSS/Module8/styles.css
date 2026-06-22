@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+/* Navbar */
+
+.navbar{
+
+    background-color: #343848;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 30px;
+}
+
+/* Logo */
+
+.logo{
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+/* Menu */
+
+.menu{
+
+    display: flex;
+
+    list-style: none;
+}
+
+.menu li{
+
+    position: relative;
+}
+
+.menu li a{
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 25px;
+
+    transition: 0.3s;
+}
+
+/* Hover Box */
+
+.menu li a:hover{
+
+    background-color: #39d98a;
+}
+
+/* Underline */
+
+.menu li a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 3px;
+
+    background-color: #39d98a;
+
+    transition: 0.3s;
+}
+
+.menu li a:hover::after{
+
+    width: 100%;
+}
+
+/* Active Menu */
+
+.menu li a.active::after{
+
+    width: 100%;
+}
+
+/* Sign Up Button */
+
+.signup-btn{
+
+    background-color: #4d8dff;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.signup-btn:hover{
+
+    background-color: #3575e6;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu{
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .menu li a{
+
+        text-align: center;
+    }
+}

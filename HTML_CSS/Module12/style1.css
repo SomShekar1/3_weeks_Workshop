@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#9b8cf5;
+}
+
+/* Main Section */
+
+.hero-section{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+/* White Card */
+
+.hero-card{
+
+    width:1000px;
+
+    background:white;
+
+    padding:30px 40px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Navbar */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.logo{
+
+    font-weight:bold;
+
+    color:#7d5fff;
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+}
+
+nav ul a{
+
+    text-decoration:none;
+
+    color:#555;
+}
+
+.fa-bars{
+
+    color:#777;
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:50px;
+
+    gap:50px;
+}
+
+/* Left Section */
+
+.left{
+
+    flex:1;
+}
+
+.left h1{
+
+    font-size:45px;
+
+    color:#222;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+}
+
+.left span{
+
+    color:#7d5fff;
+}
+
+.left p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+    line-height:1.6;
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:40px;
+}
+
+.btn1{
+
+    background:#7d5fff;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+.btn2{
+
+    background:white;
+
+    border:2px solid #7d5fff;
+
+    color:#7d5fff;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+}
+
+.btn1:hover{
+
+    background:#6a4cff;
+}
+
+.btn2:hover{
+
+    background:#7d5fff;
+    color:white;
+}
+
+/* Stats */
+
+.stats{
+
+    display:flex;
+
+    gap:40px;
+}
+
+.stats h3{
+
+    color:#222;
+}
+
+.stats p{
+
+    font-size:13px;
+}
+
+/* Hero Image */
+
+.right{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+}
+
+.right img{
+
+    width:320px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero-content{
+
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+
+        display:none;
+    }
+
+    .stats{
+
+        justify-content:center;
+    }
+}

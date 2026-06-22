@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+
+    width:230px;
+
+    background:white;
+
+    padding:30px 20px;
+
+    border-radius:5px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+
+    cursor:pointer;
+}
+
+.card h3{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    color:#444;
+}
+
+.card h1{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#333;
+}
+
+.card h1 span{
+
+    font-size:14px;
+
+    font-weight:normal;
+}
+
+.card ul{
+
+    list-style:none;
+}
+
+.card ul li{
+
+    margin:10px 0;
+
+    font-size:13px;
+
+    color:#555;
+}
+
+.card i{
+
+    color:#27ae60;
+
+    margin-right:5px;
+}
+
+.card button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:10px;
+
+    border:none;
+
+    background:#ffb0a8;
+
+    color:white;
+
+    border-radius:3px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+.card:hover{
+
+    background:linear-gradient(
+        to bottom,
+        #ff6b81,
+        #ff8a80
+    );
+
+    transform:translateY(-10px)
+              scale(1.05);
+}
+
+/* Change Text Color */
+
+.card:hover h1,
+.card:hover h3,
+.card:hover ul li,
+.card:hover i{
+
+    color:white;
+}
+
+/* Change Button */
+
+.card:hover button{
+
+    background:white;
+
+    color:#ff6b81;
+
+    font-weight:bold;
+}
